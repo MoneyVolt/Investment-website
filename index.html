@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome to the Dashboard</h1>
+        <button id="voiceButton">Click for Voice Guide</button>
+        <div class="referral-section">
+            <h2>Your Referral Link:</h2>
+            <p id="referralLink">https://example.com/referral?code=ABC123</p>
+            <button onclick="copyReferral()">Copy Link</button>
+        </div>
+        <div class="password-section">
+            <h2>Set Your Password:</h2>
+            <input type="password" id="passwordInput" placeholder="Enter your password" onkeyup="validatePassword()" />
+            <p id="warningMessage"></p>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
