@@ -1,27 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Online Investment Platform</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="dashboard">
-        <h1>Welcome to the Dashboard</h1>
-        <button id="voiceButton">Click for Voice Guide</button>
-        <div class="referral-section">
-            <h2>Your Referral Link:</h2>
-            <p id="referralLink">https://example.com/referral?code=ABC123</p>
-            <button onclick="copyReferral()">Copy Link</button>
+    <header>
+        <div class="logo">
+            <h1>Investment Platform</h1>
         </div>
-        <div class="password-section">
-            <h2>Set Your Password:</h2>
-            <input type="password" id="passwordInput" placeholder="Enter your password" onkeyup="validatePassword()" />
-            <p id="warningMessage"></p>
-        </div>
-    </div>
-    <script src="../js/script.js"></script>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="investment.html">Invest Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Welcome to Your Investment Journey</h2>
+            <p>Start investing today and grow your wealth securely.</p>
+            <button><a href="signup.html">Start Now</a></button>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Sign up to create your account.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Choose your investment plan.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Start investing and monitor your returns.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="investment-plans">
+            <h2>Our Investment Plans</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>Basic Plan</h3>
+                    <p>Invest $100 - $1000</p>
+                    <p>Return: 5% monthly</p>
+                    <button><a href="investment.html">Invest</a></button>
+                </div>
+                <div class="plan">
+                    <h3>Premium Plan</h3>
+                    <p>Invest $1000 - $5000</p>
+                    <p>Return: 10% monthly</p>
+                    <button><a href="investment.html">Invest</a></button>
+                </div>
+                <div class="plan">
+                    <h3>VIP Plan</h3>
+                    <p>Invest $5000+</p>
+                    <p>Return: 15% monthly</p>
+                    <button><a href="investment.html">Invest</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Investment Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
